@@ -38,7 +38,7 @@ function App() {
     <>
       <Navbar title="TextUtils" aboutText="About TextUtils" theme={theme} toggleTheme={toggleTheme} />
       <Alert alert={alert} />
-      <TextForm showAlert={showAlert} heading="Enter the text to analyze below" theme={theme} />
+      <TextForm showAlert={showAlert} heading="Enter the text to analyze!" theme={theme} />
 
       {/* commented below code as router does not work with github pages properly */}
       {/* <Router>
