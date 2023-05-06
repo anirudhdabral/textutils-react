@@ -32,7 +32,7 @@ export default function TextForm(props) {
   const handleRemoveExtraSpaces = () => {
     let newText = text.split(/[ ]+/);
     setText(newText.join(" "))
-    props.showAlert("Extra spaces removed!", 'Success')
+    props.showAlert("Extra spaces removed!", 'success')
   }
 
   return (
