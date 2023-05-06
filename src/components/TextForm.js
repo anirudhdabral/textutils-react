@@ -53,11 +53,11 @@ export default function TextForm(props) {
 
           />
         </div>
-        <button className={`btn btn-${props.theme === 'light' ? 'dark' : 'light'} mx-1`} onClick={handleUpClick}>Convert to uppercase</button>
-        <button className={`btn btn-${props.theme === 'light' ? 'dark' : 'light'} mx-1`} onClick={handleLoClick}>Convert to lowercase</button>
-        <button className={`btn btn-${props.theme === 'light' ? 'dark' : 'light'} mx-1`} onClick={handleClearClick}>Clear Text</button>
-        <button className={`btn btn-${props.theme === 'light' ? 'dark' : 'light'} mx-1`} onClick={handleCopy}>Copy Text</button>
-        <button className={`btn btn-${props.theme === 'light' ? 'dark' : 'light'} mx-1`} onClick={handleRemoveExtraSpaces}>Remove extra spaces</button>
+        <button className={`btn btn-${props.theme === 'light' ? 'dark' : 'light'} m-1`} onClick={handleUpClick}>Convert to uppercase</button>
+        <button className={`btn btn-${props.theme === 'light' ? 'dark' : 'light'} m-1`} onClick={handleLoClick}>Convert to lowercase</button>
+        <button className={`btn btn-${props.theme === 'light' ? 'dark' : 'light'} m-1`} onClick={handleClearClick}>Clear Text</button>
+        <button className={`btn btn-${props.theme === 'light' ? 'dark' : 'light'} m-1`} onClick={handleCopy}>Copy Text</button>
+        <button className={`btn btn-${props.theme === 'light' ? 'dark' : 'light'} m-1`} onClick={handleRemoveExtraSpaces}>Remove extra spaces</button>
       </div>
       <div className="container my-3" style={{ color: props.theme === 'light' ? 'black' : 'white' }}>
         <h2>Your text summary:</h2>
