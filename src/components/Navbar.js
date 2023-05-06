@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
 
@@ -19,7 +19,7 @@ export default function Navbar(props) {
   return (
     <nav className={`navbar navbar-expand-lg navbar-${props.theme} bg-${props.theme}`}>
       <div className="container-fluid">
-        <span className="navbar-brand" href="/">
+        <span className="navbar-brand" href="#">
           {props.title}
         </span>
         <button
@@ -35,14 +35,18 @@ export default function Navbar(props) {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            
+            
+            
+            
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/">
+              <a className="nav-link active" aria-current="page" href="/">
                 Home
-              </Link>
+              </a>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link className="nav-link" to='/about'>{props.aboutText}</Link>
-            </li>
+            </li> */}
           </ul>
 
           {props.theme === 'dark' ? <div class="btn-group mx-3" role="group">

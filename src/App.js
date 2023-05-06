@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./App.css";
-import About from "./components/About";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import Alert from "./components/Alert";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import About from "./components/About";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -36,7 +36,12 @@ function App() {
 
   return (
     <>
-      <Router>
+      <Navbar title="TextUtils" aboutText="About TextUtils" theme={theme} toggleTheme={toggleTheme} />
+      <Alert alert={alert} />
+      <TextForm showAlert={showAlert} heading="Enter the text to analyze below" theme={theme} />
+
+      {/* commented below code as router does not work with github pages properly */}
+      {/* <Router>
         <Navbar title="TextUtils" aboutText="About TextUtils" theme={theme} toggleTheme={toggleTheme} />
         <Alert alert={alert} />
         <Routes>
@@ -45,7 +50,7 @@ function App() {
           } />
           <Route exact path='/about' element={<About />} />
         </Routes>
-      </Router>
+      </Router> */}
     </>
   );
 }
